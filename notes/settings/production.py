@@ -23,9 +23,9 @@ TEMPLATE_DIR=os.path.join(BASE_DIR,'template')
 SECRET_KEY = os.environ.get('SECRET_KEY','2ji@qno2c2+4qq&#9tk7(i+^!%)!=t=drg&7^78zbiwglc_pip')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['ani-notes.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -126,13 +126,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-
-CORS_REPLACE_HTTPS_REFERER     =True
-HOST_SCHEME                    ="http://"
-SECURE_PROXY_SSL_HEADER        =('HTTP_X_FORWARDED_PROTO','https')
-SECURE_SSL_REDIRECT            =True
-SESSION_COOKIE_SECURE          =True
-CSRF_COOKIE_SECURE             =True
-SECURE_HSTS_SECONDS            =1000000
-SECURE_HSTS_INCLUDE_SUBDOMAINS =True
-SECURE_FRAME_DENY              =True
+#
+# CORS_REPLACE_HTTPS_REFERER     =True
+# HOST_SCHEME                    ="http://"
+# SECURE_PROXY_SSL_HEADER        =('HTTP_X_FORWARDED_PROTO','https')
+# SECURE_SSL_REDIRECT            =True
+# SESSION_COOKIE_SECURE          =True
+# CSRF_COOKIE_SECURE             =True
+# SECURE_HSTS_SECONDS            =1000000
+# SECURE_HSTS_INCLUDE_SUBDOMAINS =True
+# SECURE_FRAME_DENY              =True
